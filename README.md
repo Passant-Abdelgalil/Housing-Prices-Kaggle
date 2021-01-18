@@ -12,9 +12,9 @@ A notebook that uses Housing Prices dataset on kaggle to predict a house price, 
 
 ## Score: :trophy:
 
-| Mean Square Error | 16336 |
+| Mean Square Error | 16208 |
 | ----------- | ----------- |
-| ranked | 9502 (**TOP 17%**)|
+| ranked | 7085 (**TOP 13%**)|
 
 
 ## Machine Learning Workflow :three: :arrows_counterclockwise:
