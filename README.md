@@ -19,8 +19,8 @@ A notebook that uses Housing Prices dataset on kaggle to predict a house price, 
 
 ## Machine Learning Workflow :three: :arrows_counterclockwise:
 1.  Data Exploration :hammer:
-     *  Univariant Exploration.
-     *  Bivariant Exploration.
+     *  univariate Exploration.
+     *  Bivariate Exploration.
 2.  Data Pre-Processing :wrench:
      *  Missing Values
      *  Creating new Features ( <span style = "color:green">Remodled</span>, <span style = "color: blue">HasPorch</span> )
