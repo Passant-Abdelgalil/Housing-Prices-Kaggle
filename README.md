@@ -1,4 +1,5 @@
-# Housing-Prices-Kaggle :house:
+![logo](logo.png)
+
 A notebook that uses Housing Prices dataset on kaggle to predict a house price, this notebook includes Data Exploration with visualizations, Data Wrangling and Model building.
 [Competition Link](https://www.kaggle.com/c/home-data-for-ml-course/overview)
 
@@ -12,20 +13,19 @@ A notebook that uses Housing Prices dataset on kaggle to predict a house price, 
 
 ## Score: :trophy:
 
-| Mean Square Error | 16208 |
+| Mean Square Error | 15900 |
 | ----------- | ----------- |
-| ranked | 7085 (**TOP 13%**)|
+| ranked | 5946 (**TOP 11%**)|
 
 
 ## Machine Learning Workflow :three: :arrows_counterclockwise:
 1.  Data Exploration :hammer:
      *  univariate Exploration.
      *  Bivariate Exploration.
-2.  Data Pre-Processing :wrench:
-     *  Missing Values
+2.  Data Preprocessing :wrench:
+     *  Missing Values using **pandas interpolate**
      *  Creating new Features ( <span style = "color:green">Remodled</span>, <span style = "color: blue">HasPorch</span> )
      *  Drop Useless Features
-     *  Drop redundant Columns
      *  Apply StandardScaler
 3.  Model Building :dart: 
 
@@ -38,3 +38,4 @@ A notebook that uses Housing Prices dataset on kaggle to predict a house price, 
 1.  One Hot Encoding was better than label encoder here, since most of the categorical variables are not ordinal (it improved the model performance a lot)
 2.  using one hot encoding introduced the problem of Multicollinearity , to overcome this probelm we need to drop one of the dummy columns (set drop_first = True)
 3.  StackingRegressor is greatly beneficial when it comes to regression problems, I used it here with (cv = 5) that is KFold cross-validation 
+4.  pandas function **interpolate** is a better way to handle missing values, that's how i improved the score
